@@ -1,0 +1,110 @@
+<!--this tells the version of the html to the browser
+ since html 5-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- gives extra metdata to the html doc,we are telling the
+    browser that the contents are utf encoded
+    utf-8 is internationally accepted encoding standard,
+    if encoding standard is not mentioned properly then the content may
+    be rendered incorrectly
+    -->
+  <meta charset="utf-8">
+  <title>Priyanshu's Personal Site</title>
+</head>
+
+<body>
+  <!--Using table for layout -->
+  <!-- Note cellspacing attribute is deprecated-->
+  <table cellspacing="20">
+    <tr>
+      <td>
+        <!-- to include an image from the current directory -->
+        <!--
+        <img src="images/priyanshu.png" alt="Pk Profile Picture">
+        -->
+        <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGi1LkiiA3rcA/profile-displayphoto-shrink_200_200/0/1623609969208?e=1648684800&v=beta&t=LqmMx-1N5JPADppDgqbOJfz_9s5S3-kHVHsf8Jquj1s" alt="Priyanshu Profile Picture"
+          width="110" height="110">
+      </td>
+      <td>
+        <h1>Priyanshu Kundu</h1>
+        <p><em><b><a href="https://priyanshukundu.netlify.app/">Software Engineer</a></b> and Life Long Learner</em></p>
+        <p>Hi,I am a Software Developer and a Product Development Enthusiast</p>
+      </td>
+    </tr>
+  </table>
+  <hr>
+  <h3>Education</h3>
+  <!-- unordered list  -->
+  <ul>
+    <li>I graduated from KIIT,Bhubaneswar,India on May 2021</li>
+    <li>Had completed my senior secondary in 2017</li>
+  </ul>
+  <hr>
+  <!-- Implementing tables in html -->
+  <h3>Work Experience</h3>
+  <!-- splitting thead,tbody,tfoot are the best practices-->
+  <!-- Note border attribute is deprecated for table as html should only provide the structure,not the styling-->
+  <table border="1" cellspacing="10">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jun 2021 to Present</td>
+        <td>Associate Software Engineer - 1 at HighRadius Corporation</td>
+      </tr>
+      <tr>
+        <td>March 2020 to June 2021</td>
+        <td>Full Stack Software Engineer & Data Science Intern at HighRadius Corporation</td>
+      </tr>
+    </tbody>
+    <tfoot>
+
+    </tfoot>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+      <!--Adding table layout -->
+      <!-- this table layout is not a good practice -->
+      <table>
+        <tr>
+          <!--Left Section for Skills -->
+          <td>
+            <table cellspacing = "10">
+              <tr>
+                <td>Java</td>
+                <td>⭐⭐⭐⭐</td>
+              </tr>
+              <tr>
+                <td>Spring</td>
+                <td>⭐⭐</td>
+              </tr>
+            </table>
+          </td>
+          <!--Right Section for Skills -->
+          <td>
+          <table>
+            <tr>
+              <td>Data Structures and Algorithms</td>
+              <td>⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Data Science with Python</td>
+              <td>⭐⭐⭐</td>
+            </tr>
+          </table>
+          </td>
+        </tr>
+      </table>
+  <hr>
+  <a href="hobbies.html">My Hobbies</a>
+  <a href="contact-me.html">Contact Me</a>
+
+</body>
+
+</html>
